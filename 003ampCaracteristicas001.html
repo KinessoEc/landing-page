@@ -1,0 +1,65 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>Caracteristicas en AMP</title>
+    <style amp-custom>
+      .characteristics-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #e9e9e9;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .characteristic-item {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: #333;
+      }
+      .characteristic-item amp-img {
+        margin-bottom: 5px;
+      }
+      .characteristic-item .title {
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 5px;
+      }
+      .characteristic-item .value {
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="characteristics-box">
+      <!-- Dificultad -->
+      <div class="characteristic-item">
+        <amp-img src="icono_dificultad.png" width="24" height="24" alt="Dificultad"></amp-img>
+        <div class="title">DIFICULTAD</div>
+        <div class="value">Fácil</div>
+      </div>
+      <!-- Cocinada por -->
+      <div class="characteristic-item">
+        <amp-img src="icono_cocinada.png" width="24" height="24" alt="Cocinada por"></amp-img>
+        <div class="title">COCINADA POR</div>
+        <div class="value">2 personas</div>
+      </div>
+      <!-- Porciones -->
+      <div class="characteristic-item">
+        <amp-img src="icono_porciones.png" width="24" height="24" alt="Porciones"></amp-img>
+        <div class="title">PORCIONES</div>
+        <div class="value">12</div>
+      </div>
+      <!-- Tiempo total -->
+      <div class="characteristic-item">
+        <amp-img src="icono_tiempo.png" width="24" height="24" alt="Tiempo total"></amp-img>
+        <div class="title">TOTAL</div>
+        <div class="value">27 min</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <title>Pie de Limón Sencillo</title>
+  <link rel="canonical" href="URL_CANONICA_DE_LA_PAGINA">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-custom>
+    /* Estilos personalizados */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      background-color: #f8f8f8;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px; /* Ajusta el tamaño del logo según lo necesites */
+    }
+
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .auth-buttons a {
+      text-decoration: none;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .btn-login {
+      color: #f97316;
+      border: 2px solid #f97316;
+    }
+
+    .btn-register {
+      background-color: #f97316;
+      color: white;
+    }
+
+    .content {
+      padding: 70px 10px 60px 10px; /* Ajusta según el tamaño de header y footer */
+    }
+
+    footer {
+      background-color: #f8f8f8;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    footer nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+<body>
+  <header>
+    <!-- Menú con logo y botones de autenticación -->
+    <div class="logo">
+      <amp-img src="URL_DEL_LOGO" width="150" height="40" layout="fixed" alt="Logo"></amp-img>
+    </div>
+    <div class="auth-buttons">
+      <a href="#iniciar-sesion" class="btn-login">Iniciar sesión</a>
+      <a href="#registrarse" class="btn-register">Regístrate</a>
+    </div>
+  </header>
+
+  <div class="content">
+    <!-- Contenido principal de la receta -->
+    <h1>Pie de Limón Sencillo</h1>
+    <p>Delicioso, cremoso y con solo 4 ingredientes...</p>
+    <amp-img src="URL_DE_LA_IMAGEN" width="720" height="480" layout="responsive" alt="Pie de Limón Sencillo"></amp-img>
+    <!-- Más contenido aquí -->
+  </div>
+
+  <footer>
+    <!-- Menú estático inferior -->
+    <nav>
+      <a href="#buscador">Buscador</a> |
+      <a href="#escuela">Escuela de sabor</a> |
+      <a href="#menu">Planear tu menú</a>
+    </nav>
+  </footer>
+</body>
+</html>
