@@ -1,0 +1,72 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>AMP Footer Estático con z-index</title>
+    <style amp-custom>
+      body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      footer {
+        background-color: #f8f8f8;
+        padding: 10px 0;
+        border-top: 1px solid #e9e9e9;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 10;
+      }
+      .footer-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+      }
+      .footer-menu-item {
+        flex: 1;
+        font-size: 14px;
+        color: #6e4d36;
+        position: relative; /* Necesario para que z-index funcione */
+      }
+      .footer-menu-item amp-img {
+        display: block;
+        margin: 0 auto 5px;
+        width: 24px;
+        height: 24px;
+        z-index: 5; /* Prioridad en la superposición */
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-menu">
+        <div class="footer-menu-item">
+          <amp-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/120px-Commons-logo.svg.png" alt="Buscador"></amp-img>
+          <span>Buscador</span>
+        </div>
+        <div class="footer-menu-item">
+          <amp-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Crystal_Clear_app_kmenu.png/600px-Crystal_Clear_app_kmenu.png" alt="Recetas"></amp-img>
+          <span>Recetas</span>
+        </div>
+        <div class="footer-menu-item">
+          <amp-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Icon-education.png/768px-Icon-education.png" alt="Escuela de sabor"></amp-img>
+          <span>Escuela de sabor</span>
+        </div>
+        <div class="footer-menu-item">
+          <amp-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Icon-permalink.png/600px-Icon-permalink.png" alt="Cocina con"></amp-img>
+          <span>Cocina con</span>
+        </div>
+        <div class="footer-menu-item">
+          <amp-img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Calendar_Icon.svg/1024px-Calendar_Icon.svg.png" alt="Planear tu menú"></amp-img>
+          <span>Planear tu menú</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
