@@ -65,14 +65,20 @@
       padding: 70px 10px 60px 10px; /* Ajusta según el tamaño de header y footer */
     }
 
+
+    /*Botones de social*/
     .social-box {
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         gap: 10px;
         padding: 10px;
         background-color: #f0f0f0;
         border-radius: 10px;
         max-width: 200px;
+        position:fixed;
+        right:10px;
+        top:150px;
+        z-index: 10;
       }
       .social-box a {
         display: block;
@@ -85,6 +91,8 @@
         object-fit: contain;
         border-radius: 5px;
       }
+
+
     /*Estilo cuadro características*/
     .characteristics-box {
         display: flex;
@@ -95,6 +103,7 @@
         border: 1px solid #e9e9e9;
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: -100px;
       }
       .characteristic-item {
         text-align: center;
@@ -113,6 +122,7 @@
       .characteristic-item .value {
         color: #666;
       }  
+      
     /*Estilo comentarios*/
     .comments-section {
         background-color: #fff;
@@ -256,18 +266,45 @@
       <amp-img src="https://www.pharmacys.com.ec/wcsstore/DF_StoreFrontAsset/images/logo.png" width="100" height="19" layout="fixed" alt="Logo"></amp-img>
     </div>
     <div class="auth-buttons">
-      <a href="#iniciar-sesion" class="btn-login">Iniciar sesión</a>
-      <a href="#registrarse" class="btn-register">Regístrate</a>
+      <a href="https://www.pharmacys.com.ec/webapp/wcs/stores/servlet/ResetPasswordGuestErrorView?state=forgetpassword&catalogId=10051&langId=-1000&storeId=10151" class="btn-login">Iniciar sesión</a>
+      <a href="https://www.pharmacys.com.ec/pharmacys/cuidado-personal/cuidado-del-cabello/tintes/decolorante-capilar-koleston-20-vol-en-crema-50-ml?srsltid=AfmBOoqTA5Q7KQLNbJuQgnIYJ4FJIct2ArmchWqB1X9WQnsdWUG3Zsi6" class="btn-register">Comprar</a>
     </div>
   </header>
 
   <div class="content">
     <!-- Contenido principal de la receta -->
-    <amp-img src="https://www.pharmacys.com.ec/wcsstore/DF_CatalogAsset/images/catalog/producto/fullimage/101064P-1.jpg" width="900" height="900" layout="responsive" alt="Pie de Limón Sencillo"></amp-img>
+    <amp-img src="https://www.pharmacys.com.ec/wcsstore/DF_CatalogAsset/images/catalog/producto/fullimage/101064P-1.jpg" width="900" height="900" layout="responsive" alt="Pie de Limón Sencillo" id="producto"></amp-img>
     <!-- Más contenido aquí -->
   </div>
 
-  
+  <!--Características resumidas-->
+<div class="characteristics-box">
+  <!-- Producto -->
+  <div class="characteristic-item">
+    <amp-img src="belleza-salud.png" width="24" height="24" alt="belleza salud"></amp-img>
+    <div class="title">CUIDADO</div>
+    <div class="value">Cabello</div>
+  </div>
+  <!-- Precio -->
+  <div class="characteristic-item">
+    <amp-img src="etiqueta-del-precio.png" width="24" height="24" alt="precio"></amp-img>
+    <div class="title">PRECIO</div>
+    <div class="value">1,72 USD</div>
+  </div>
+<!-- Codigo -->
+  <div class="characteristic-item">
+    <amp-img src="codigo-de-barras.png" width="24" height="24" alt="codigo"></amp-img>
+    <div class="title">CÓDIGO</div>
+    <div class="value">101063P</div>
+  </div>
+  <!-- Stock -->
+  <div class="characteristic-item">
+    <amp-img src="en-stock.png" width="24" height="24" alt="Tiempo total"></amp-img>
+    <div class="title">STOCK</div>
+    <div class="value">Disponible</div>
+  </div>
+</div>
+
     <!--Botones Social-->
     <div class="social-box">
       <!-- Botón de Facebook -->
@@ -288,33 +325,6 @@
     <h1 id="titulo">Decolorante capilar koleston 30 vol en crema 50 ml</h1>
     <p>Emulsión para aclarar el tono natural del cabello y acoplar los pigmentos del color dentro del cabello. Aclarador 200 vol., con el cual se realizan procesos medios de decoloración para pelo o cubrimiento de canas. Aclara de 1 a 2 tonos. Contenido: 50 ml.</p>
 
-<!--Características resumidas-->
-<div class="characteristics-box">
-      <!-- Producto -->
-      <div class="characteristic-item">
-        <amp-img src="belleza-salud.png" width="24" height="24" alt="belleza salud"></amp-img>
-        <div class="title">CUIDADO</div>
-        <div class="value">Cabello</div>
-      </div>
-      <!-- Precio -->
-      <div class="characteristic-item">
-        <amp-img src="etiqueta-del-precio.png" width="24" height="24" alt="precio"></amp-img>
-        <div class="title">PRECIO</div>
-        <div class="value">1,72 USD</div>
-      </div>
-    <!-- Codigo -->
-      <div class="characteristic-item">
-        <amp-img src="codigo-de-barras.png" width="24" height="24" alt="codigo"></amp-img>
-        <div class="title">CÓDIGO</div>
-        <div class="value">101063P</div>
-      </div>
-      <!-- Stock -->
-      <div class="characteristic-item">
-        <amp-img src="en-stock.png" width="24" height="24" alt="Tiempo total"></amp-img>
-        <div class="title">STOCK</div>
-        <div class="value">Disponible</div>
-      </div>
-  </div>
   <h2 id="subtitulo">Comentarios</h2>
 
   <div class="comments-section">
